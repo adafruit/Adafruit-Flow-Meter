@@ -84,7 +84,7 @@ void loop()                     // run over and over again
   Serial.print("Pulses: "); Serial.println(pulses, DEC);
   
   // if a plastic sensor use the following calculation
-  // Sensor Frequency (Hz) = 7.5 * Q (Liters/min)
+  // Sensor Frequency (Hz) = 7.5 * 60 * Q (Liters/min)
   // Liters = Q * time elapsed (seconds) / 60 (seconds/minute)
   // Liters = (Frequency (Pulses/second) / 7.5) * time elapsed (seconds) / 60
   // Liters = Pulses / (7.5 * 60)
